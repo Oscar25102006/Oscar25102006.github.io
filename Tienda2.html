@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cell Connection-Tienda</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="Tienda2.css">
+    </head>
+
+<body>
+    
+    <header class="header">
+        <div class="menu container">
+            <a href="Logo.png" class="logo">
+            <img src="images/Logo.png" class="menu-icono" alt="">
+            </a>
+            <input type="checkbox" id="menu" />
+            <label for="menu"><img src="images/menu.png" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Index.html" ><i class="bi bi-house-door-fill"></i> Inicio</a></li>
+                    <li><a href="Nosotros.html"><i class="bi bi-people-fill"></i> Nosotros</a></li>
+                    <li><a href="Tienda.html" id="selected"><i class="bi bi-shop"></i> Tienda</a></li>
+                    <li><a href="Contacto2.html"><i class="bi bi-envelope-fill"></i> Contactos</a></li>
+                </ul>
+                
+                
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <i class="bi bi-cart-fill" id="img-carrito"></i>
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="comprar-items" class="btn-4">Comprar Items</a>
+                            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>     
+                            <a href="factura.html" id="Imprimir-factura" class="btn-5">Imprimir factura</a>                         
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+    <section class="promos container" id="lista-1">
+        <h2>Telefonos de Ultima Generacion</h2>
+        <div class="categories">
+            <div class="categorie">
+
+                <div class="categorie-1">
+                    <h3>Iphone 15 gb256</h3>
+                    <div class="prices">
+                        <p class="price-1"></p>
+                        <p class="precio">$50,000</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al carrito</a>
+                    <a href="#" class="comprar-Items btn-4" data-id="1">Comprar Items</a>
+                </div>
+                <div class="categoria-img">
+                    <img src="images/003.png" alt="">
+                </div>
+            </div>
+
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Iphone 15 pro max gb500</h3>
+                    <div class="prices">
+                        <p class="price-1"></p>
+                        <p class="precio">$60,000</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al carrito</a>
+                    <a href="#" class="comprar-Items btn-4" data-id="2">Comprar Items</a>
+                </div>
+                <div class="categoria-img">
+                    <img src="images/01.png" alt="">
+                </div>
+            </div>
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Iphone 15 plus gb256</h3>
+                    <div class="prices">
+                        <p class="price-1"></p>
+                        <p class="precio">$52,000</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
+                    <a href="#" class="comprar-Items btn-4" data-id="4">Comprar Items</a>
+                </div>
+                <div class="categoria-img">
+                    <img src="images/02.png" alt="">
+                </div>
+            </div>
+
+            <div class="categorie">
+                <div class="categorie-1">
+                    <h3>Iphone 15 pro gb500</h3>
+                    <div class="prices">
+                        <p class="price-1"></p>
+                        <p class="precio">$55,000</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al carrito</a>
+                    <a href="#" class="comprar-Items btn-4" data-id="4">Comprar Items</a>
+                </div>
+                <div class="categoria-img">
+                    <img src="images/004.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <hr>
+
+
+    <section class="products container" id="lista-2">
+
+        <h2>Telefonos Apple</h2>
+
+        <div class="swiper myswiper-2">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+
+                    <div class="product">
+                        <img src="images/00.jpg" alt="">
+                        <div class="producto-tct">
+                            <h3>iphone 12 Pro max
+                                256gb
+                            </h3>
+                            <p>256gb</p>
+                            <p Class="precio"> $45,600</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="5">Comprar Items</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="product">
+                        <img src="images/005.jpg" alt="">
+                        <div class="producto-tct">
+                            <h3>Tenis alamoda</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="6">Comprar Items</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="product">
+                        <img src="images/06.jpg" alt="">
+                        <div class="producto-tct">
+                            <h3>Abrigo de Kakashi</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="7">Comprar Items</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="product">
+                        <img src="images/06.png" alt="">
+                        <div class="producto-tct">
+                            <h3>Poloche Moderno</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="product">
+                        <img src="images/07.jpg" alt="">
+                        <div class="producto-tct">
+                            <h3>Poloche Moderno</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/008.jpg" alt="">
+                        <div class="producto-tct">
+                            <h3>Poloche Moderno</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/08.png" alt="">
+                        <div class="producto-tct">
+                            <h3>Poloche Moderno</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/09.png" alt="">
+                        <div class="producto-tct">
+                            <h3>Poloche Moderno</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/021.png" alt="">
+                        <div class="producto-tct">
+                            <h3>Poloche Moderno</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/061.png" alt="">
+                        <div class="producto-tct">
+                            <h3>Poloche Moderno</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </section>
+
+
+ <!--
+ Prueba
+-->
+
+<section class="products container" id="lista-4">
+
+<h2>Telefonos Samsung</h2>
+
+<div class="swiper myswiper-2">
+
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+
+            <div class="product">
+                <img src="images/10.png" alt="">
+                <div class="producto-tct">
+                    <h3>Abrigo de One Piece</h3>
+                    <p>Calidad premium</p>
+                    <p Class="precio">$1500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                    <a href="#" class="comprar-Items btn-4" data-id="5">Comprar Items</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-slide">
+
+            <div class="product">
+                <img src="images/11.jpg" alt="">
+                <div class="producto-tct">
+                    <h3>Tenis alamoda</h3>
+                    <p>Calidad premium</p>
+                    <p Class="precio">$1500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                    <a href="#" class="comprar-Items btn-4" data-id="6">Comprar Items</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-slide">
+
+            <div class="product">
+                <img src="images/12.jpg" alt="">
+                <div class="producto-tct">
+                    <h3>Abrigo de Kakashi</h3>
+                    <p>Calidad premium</p>
+                    <p Class="precio">$1500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                    <a href="#" class="comprar-Items btn-4" data-id="7">Comprar Items</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-slide">
+
+            <div class="product">
+                <img src="images/13.jpg" alt="">
+                <div class="producto-tct">
+                    <h3>Poloche Moderno</h3>
+                    <p>Calidad premium</p>
+                    <p Class="precio">$1500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                    <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-slide">
+
+            <div class="product">
+                <img src="images/14.jpg" alt="">
+                <div class="producto-tct">
+                    <h3>Poloche Moderno</h3>
+                    <p>Calidad premium</p>
+                    <p Class="precio">$1500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                    <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="product">
+                <img src="images/15.jpg" alt="">
+                <div class="producto-tct">
+                    <h3>Poloche Moderno</h3>
+                    <p>Calidad premium</p>
+                    <p Class="precio">$1500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                    <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="product">
+                <img src="images/16.jpg" alt="">
+                <div class="producto-tct">
+                    <h3>Poloche Moderno</h3>
+                    <p>Calidad premium</p>
+                    <p Class="precio">$1500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                    <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="product">
+                <img src="images/17.jpg" alt="">
+                <div class="producto-tct">
+                    <h3>Poloche Moderno</h3>
+                    <p>Calidad premium</p>
+                    <p Class="precio">$1500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                    <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="product">
+                <img src="images/18.jpg" alt="">
+                <div class="producto-tct">
+                    <h3>Poloche Moderno</h3>
+                    <p>Calidad premium</p>
+                    <p Class="precio">$1500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                    <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="product">
+                <img src="images/19.jpg" alt="">
+                <div class="producto-tct">
+                    <h3>Poloche Moderno</h3>
+                    <p>Calidad premium</p>
+                    <p Class="precio">$1500</p>
+                    <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                    <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+</section>
+
+<!--
+ Prueba
+-->
+
+    <hr>
+
+    <section class="products container" id="lista-3">
+
+        <h2>Telefonos Huawei</h2>
+
+        <div class="swiper myswiper-2">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+
+                    <div class="product">
+                        <img src="images/20.jpg" alt="">
+                        <div class="producto-tct">
+                            <h3>Abrigo</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="9">Comprar Items</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="product">
+                        <img src="images/21.png" alt="">
+                        <div class="producto-tct">
+                            <h3>Tenis</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="10">Comprar Items</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="product">
+                        <img src="images/22.jpg" alt="">
+                        <div class="producto-tct">
+                            <h3>Gorra</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="11">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="11">Comprar Items</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="product">
+                        <img src="images/23.jpg" alt="">
+                        <div class="producto-tct">
+                            <h3>Gorra</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="12">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="12">Comprar Items</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/24.jpg" alt="">
+                        <div class="producto-tct">
+                            <h3>Poloche Moderno</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/25.jpg" alt="">
+                        <div class="producto-tct">
+                            <h3>Poloche Moderno</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/26.jpg" alt="">
+                        <div class="producto-tct">
+                            <h3>Poloche Moderno</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/27.jpg" alt="">
+                        <div class="producto-tct">
+                            <h3>Poloche Moderno</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product">
+                        <img src="images/28.jpg" alt="">
+                        <div class="producto-tct">
+                            <h3>Poloche Moderno</h3>
+                            <p>Calidad premium</p>
+                            <p Class="precio">$1500</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                            <a href="#" class="comprar-Items btn-4" data-id="8">Comprar Items</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+    <!-- Otros elementos del pie de página aquí -->
+
+    <!-- Iconos de redes sociales -->
+    <div class="social-icons">
+        <a href="#" class="social-icon">
+            <i class="bi bi-facebook"></i>
+        </a>
+        <a href="#" class="social-icon">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <a href="#" class="social-icon">
+            <i class="bi bi-twitter"></i>
+        </a>
+        <a href="#" class="social-icon">
+            <i class="bi bi-tiktok"></i>
+        </a>
+    </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

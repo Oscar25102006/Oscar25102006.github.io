@@ -1,0 +1,33 @@
+/* factura.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.reporte {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.reporte h1 {
+    color: #333;
+    text-align: center;
+}
+
+.detalle {
+    margin-top: 20px;
+}
+
+.detalle p {
+    margin-bottom: 10px;
+}
+
+.detalle p:last-child {
+    margin-bottom: 0;
+}

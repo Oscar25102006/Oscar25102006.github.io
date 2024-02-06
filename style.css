@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --clr-blue: #4FC4BF;
+    --clr-yellow: #F1AC12;
+    --clr-black: #3D3B40;
+    --clr-white: #ffff;
+}
+
+body {
+    background-color: var(--clr-white);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 20vh;
+}
+
+.swiper-slide {
+    padding: 0 80px 50px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-prev::after {
+    font-size: 50px;
+}
+.swiper-button-next::next {
+    font-size: 25px;
+}
+.swiper-button-prev {
+    color: var(--clr-black);
+}
+
+/*Flechas*/
+.swiper-button-next{
+    color: var(--clr-black);
+}
+
+.swiper-pagination-bullet {
+    background-color: #747474;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000000;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 25px;
+    color: var(--clr-yellow);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.logo img {
+    width: 175px;
+    position: relative;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+/*Letras del menu superior*/
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 40px;
+    color: var(--clr-black);
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: var(--clr-yellow);
+}
+
+#menu  {
+    display: none;
+}
+
+.menu-icono  {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.submenu  {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: var(--clr-white);
+    padding: 20px;
+    min-width: 400px;
+}
+
+
+table {
+    width: 100%;
+}
+
+th, td {
+    color: var(--clr-black);
+}
+
+.borrar {
+    background-color: var(--clr-blue);
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--clr-black);
+    font-weight: 800;
+}
+
+.header-content {
+    padding: 200px 0 100px 0;
+}
+
+.header-info {
+    display: flex;
+}
+
+.header-txt {
+    width: 50%;
+}
+
+.header-txt h1 {
+    font-size: 50px;
+    color: var(--clr-black);
+    text-transform: capitalize;
+}
+
+.header-img {
+    width: 50%;
+    text-align: right;
+}
+
+.header-img img{
+    width: 500px;
+}
+
+.prices {
+    display: flex;
+    margin: 20px 0;
+}
+
+.price-1 {
+    font-size: 30px;
+    color: var(--clr-yellow);
+    text-decoration-line: line-through;
+    margin-right: 25px;
+}
+
+.price-2 {
+    font-size: 80px;
+    color: var(--clr-black) !important;
+}
+
+.btn-1 {
+    display: inline-block;
+    background-color: var(--clr-blue);
+    color: var(--clr-black);
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+
+
+.btn-1:hover {
+    background-color: var(--clr-blue);
+}
+
+hr {
+    border: 1px solid #7A7B8F16;
+}
+
+.promos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.promos h2 {
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.categories {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.categorie {
+    display: flex;
+    align-items: center;
+    padding: 35px;
+}
+
+.categorie img {
+    width: 150px;
+}
+
+.categorie-1 {
+    width: 50%;
+}
+
+.categorie-1 h3 {
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.categorie-1 p {
+    color: var(--clr-black);
+    font-size: 20px;
+}
+
+.categorie-img {
+    width: 50%;
+}
+
+.products {
+    padding: 50px 0;
+}
+.products h2 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 70px;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.product_txt h3 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.product-txt p  {
+    color: var(--clr-yellow);
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.precio {
+    color: #000 !important;
+}
+
+.btn-3 {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: var(--clr-black);
+    border: 1px solid var(--clr-blue);
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+.btn-3:hover {
+    background-color: var(--clr-blue);
+}
+
+.btn-4 {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: var(--clr-black);
+    border: 1px solid var(--clr-yellow);
+    border-radius: 25px;
+    margin-top: 15px;
+}
+
+.btn-4:hover {
+    background-color: var(--clr-yellow);
+}
+
+.footer {
+    display: flex;
+    padding: 30px 0;
+    /* Otros estilos de pie de página aquí */
+}
+
+
+
+/**/
+
+
+
+ul li a {
+    font-weight: bold;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    position: fixed; /* Hace que el header permanezca fijo */
+    top: 0; /* Fija el header en la parte superior */
+    background-color: white; /* Añade un fondo blanco al header */
+    z-index: 1000; /* Asegura que el header esté por encima del contenido */
+}
+
+.container__menu {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+}
+
+#selected {
+    background: #4FC4BF;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
+.container__cover {
+    min-height: calc(100vh - 400px); /* Ajuste para que tenga 400px de separación */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container__cover .cover {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__cover .text {
+    max-width: 700px;
+    text-align: justify; /* Justificar el texto */
+    margin-top: 60px; /* Agregamos el margen superior */
+}
+
+.container__cover .text h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 70px;
+    color: #4FC4BF
+}
+
+.container__cover .text p {
+    font-size: 18px;
+    margin-top:10px;
+    color: #010101;
+}
+
+.container__cover .text input {
+    padding: 18px 80px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background: linear-gradient(to right, #4FC4BF, #F1AC12);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px #5e5e5e;
+    transition: all 300ms;
+}
+
+.container__cover .text input:hover {
+    box-shadow: 1px 1px 30px -6px #F1AC12;
+}
+
+.container__cover .svg img {
+    width: 600px;
+    animation: move-vector 4s linear infinite;
+}
+
+@keyframes move-vector {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    header {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .menu nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background: black;
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        z-index: 1;
+        transition: all 300ms;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .menu ul li {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    .menu ul li a {
+        color: #bebebe;
+    }
+
+    #selected {
+        background: none;
+        padding: 0px;
+        border-radius: none;
+        color: #000000;
+    }
+
+    .menu nav img {
+        display: block;
+        width: 60px;
+    }
+
+    #back_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+
+    .menu #btn_menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 24px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+
+    .menu #btn_menu:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+}
+
+head {
+    margin-bottom: 40px; /* Ajusta el margen según sea necesario */
+}
+
+body {
+    margin-top: 120px; /* Ajusta el margen superior del body para compensar la altura del header */
+}
+hr{
+    margin-top: 40px;
+}
+
+
+/* Estilos para el icono de Inicio */
+.bi.bi-house-door-fill {
+    /* Agrega tus estilos personalizados aquí */
+    color: #F1AC12; /* Cambia el color del icono */
+    font-size: 24px; /* Cambia el tamaño del icono */
+}
+
+/* Estilos para el icono de Nosotros */
+.bi.bi-people-fill {
+    /* Agrega tus estilos personalizados aquí */
+    color: #F1AC12; /* Cambia el color del icono */
+    font-size: 24px; /* Cambia el tamaño del icono */
+}
+
+/* Estilos para el icono de Tienda */
+.bi.bi-shop {
+    /* Agrega tus estilos personalizados aquí */
+    color: #ffffff; /* Cambia el color del icono */
+    font-size: 24px; /* Cambia el tamaño del icono */
+}
+.bi.bi-envelope-fill {
+    /* Agrega tus estilos personalizados aquí */
+    color: #F1AC12; /* Cambia el color del icono */
+    font-size: 24px; /* Cambia el tamaño del icono */
+}
+
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos del menú a la derecha */
+}
+
+
+
+.menu ul li:first-child {
+    margin-left: 0; /* Elimina el margen izquierdo del primer elemento */
+}
+
+
+.menu ul li a {
+    font-size: 5px; /* Reduce el tamaño de la fuente */
+}
+
+
+.menu ul li {
+    list-style: none;
+    margin-left: 3px; /* Reduce el espacio entre los elementos */
+}
+/**/
+
+
+
+/* Estilo para el texto y el ícono en amarillo */
+h2 i.bi {
+    color: #4FC4BF; /* Cambia el color del ícono a amarillo */
+}
+
+
+
+.social-icon{
+color: black;
+font-size: 30px;
+
+}
+
+.brand-text {
+    display: inline-block;
+    margin-right: 8px; /* Ajusta el margen según sea necesario */
+    color: #000; /* Color del texto */
+}
+
+
+#carrito {
+    display: none;
+}
+
+#carrito.mostrar-carrito {
+    display: block;
+}
+
+
+
+/* Estilo para el enlace "Comprar Items" */
+#comprar-items {
+    /* Agrega tus estilos personalizados aquí */
+    color: black; /* Por ejemplo, color azul */
+    font-size: 15px;
+}
+
+/* Estilo para el enlace "Vaciar Carrito" */
+#vaciar-carrito {
+    /* Agrega tus estilos personalizados aquí */
+    color: black; /* Por ejemplo, color rojo */
+    font-size: 15px;
+}
+
+/* Estilo para el enlace "Imprimir factura" */
+#Imprimir-factura {
+    /* Agrega tus estilos personalizados aquí */
+    color: black; /* Por ejemplo, color verde */
+    font-size: 15px;
+}
+
+
+
+#notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    z-index: 1000;
+    display: none; /* Por defecto, la notificación estará oculta */
+}
+
+#img-carrito:hover {
+    color: #4FC4BF; /* Cambia el color al pasar el mouse por encima */
+    font-size: 50px; /* Cambia el tamaño al pasar el mouse por encima */
+}
+
+
+
+#img-carrito {
+    font-size: 24px; /* Tamaño deseado */
+    color: #F1AC12;
+}
+
+.bi.bi-printer-fill{
+    color: #F1AC12;
+    margin-left: 10px; /* Puedes ajustar este valor según tu preferencia */
+    font-size: 20px; /* Puedes ajustar este valor según tu preferencia */
+
+}

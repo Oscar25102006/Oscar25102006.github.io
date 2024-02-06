@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+    --clr-blue: #4FC4BF;
+    --clr-yellow: #F1AC12;
+    --crl-black: #3D3B40;
+    --crl-white: #ffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul li a {
+    font-weight: bold;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    position: fixed; /* Hace que el header permanezca fijo */
+    top: 0; /* Fija el header en la parte superior */
+    background-color: white; /* Añade un fondo blanco al header */
+    z-index: 1000; /* Asegura que el header esté por encima del contenido */
+}
+
+.container__menu {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 40px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+}
+
+#selected {
+    background: #4FC4BF;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
+.container__cover {
+    min-height: calc(100vh - 400px); /* Ajuste para que tenga 400px de separación */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container__cover .cover {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__cover .text {
+    max-width: 700px;
+    text-align: justify; /* Justificar el texto */
+    margin-top: 60px; /* Agregamos el margen superior */
+}
+
+.container__cover .text h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 70px;
+    color: #4FC4BF
+}
+
+.container__cover .text ul li {
+    font-size: 22px; /* Tamaño de fuente deseado */
+    padding-left: 13px; /* Ajuste el valor según sea necesario para desplazar el texto hacia la derecha */
+
+}
+
+
+
+
+.container__cover .text p {
+    font-size: 22px;
+    margin-top:20px;
+    color: #010101;
+}
+
+.container__cover .text input {
+    padding: 18px 80px;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 40px;
+    background: linear-gradient(to right, #4FC4BF, #F1AC12);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 1px 30px -12px #5e5e5e;
+    transition: all 300ms;
+}
+
+.container__cover .text input:hover {
+    box-shadow: 1px 1px 30px -6px #F1AC12;
+}
+
+.container__cover .svg img {
+    width: 600px;
+    animation: move-vector 4s linear infinite;
+}
+
+@keyframes move-vector {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    header {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .menu nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        background: black;
+        width: 250px;
+        height: 100vh;
+        padding: 40px;
+        z-index: 1;
+        transition: all 300ms;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .menu ul li {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .menu ul li a {
+        color: #bebebe;
+    }
+
+    #selected {
+        background: none;
+        padding: 0px;
+        border-radius: none;
+        color: #000000;
+    }
+
+    .menu nav img {
+        display: block;
+        width: 60px;
+    }
+
+    #back_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+
+    .menu #btn_menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 24px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 300ms;
+    }
+
+    .menu #btn_menu:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+}
+
+head {
+    margin-bottom: 40px; /* Ajusta el margen según sea necesario */
+}
+
+body {
+    margin-top: 120px; /* Ajusta el margen superior del body para compensar la altura del header */
+}
+hr{
+    margin-top: 40px;
+}
+
+
+.bi {
+    /* Estilos generales para todos los iconos Bootstrap */
+    font-size: 30px; /* Tamaño del icono */
+    color: #F1AC12; /* Color del icono */
+}
+
+.bi.bi-person-fill {
+    /* Estilos específicos para el icono de persona */
+    color: #F1AC12; /* Cambia el color del icono de persona */
+    font-size: 30px;
+}
+
+.bi.bi-eye-fill {
+    /* Estilos específicos para el icono de ojo */
+    font-size: 30px; /* Cambia el tamaño del icono de ojo */
+    color: #F1AC12;
+}
+
+.bi.bi-award-fill {
+    /* Estilos específicos para el icono de premio */
+    color: #F1AC12; /* Cambia el color del icono de premio */
+    font-size: 30px; /* Cambia el tamaño del icono d*/
+    
+}
+
+
+
+/**/
+
+/* Estilos para el icono de Inicio */
+.bi.bi-house-door-fill {
+    /* Agrega tus estilos personalizados aquí */
+    color: #F1AC12; /* Cambia el color del icono */
+    font-size: 24px; /* Cambia el tamaño del icono */
+}
+
+/* Estilos para el icono de Nosotros */
+.bi.bi-people-fill {
+    /* Agrega tus estilos personalizados aquí */
+    color: #ffffff; /* Cambia el color del icono */
+    font-size: 24px; /* Cambia el tamaño del icono */
+}
+
+/* Estilos para el icono de Tienda */
+.bi.bi-shop {
+    /* Agrega tus estilos personalizados aquí */
+    color: #F1AC12; /* Cambia el color del icono */
+    font-size: 24px; /* Cambia el tamaño del icono */
+}
+.bi.bi-envelope-fill {
+    /* Agrega tus estilos personalizados aquí */
+    color: #F1AC12; /* Cambia el color del icono */
+    font-size: 24px; /* Cambia el tamaño del icono */
+}
+
+
+
+
+
+
+.titulo-principal {
+    text-align: center; /* Centra el texto */
+    font-size: 10rem; /* Aumenta el tamaño de la fuente */
+}
+
+.connection {
+    color: #4FC4BF; /* Cambia el color de "connection" */
+}
+
+.cell {
+    color: #F1AC12; /* Cambia el color de "cell" */
+
+}
